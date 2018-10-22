@@ -8,6 +8,9 @@ const errorMap = {
 const Exception = {
     error: (error) => {
         console.log('出错信息： \n', error)
+        // console.log('====================================');
+        console.log(typeof error.error.stack);
+        // console.log('====================================');
         logger(error, '.error-content')
     },
     unHandledRejection: (error) => {
